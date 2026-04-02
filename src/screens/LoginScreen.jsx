@@ -20,7 +20,7 @@ export default function LoginScreen() {
       <div className="flex-1 bg-white rounded-t-3xl -mt-4 px-5 pt-7 overflow-y-auto pb-8">
         <div className="flex flex-col items-center mb-6">
           <div className="mb-2"><Avatar size={64} /></div>
-          <p className="text-sm font-semibold text-gray-500">Hi, {userName} Ì±ã</p>
+          <p className="text-sm font-semibold text-gray-500">Hi, {userName} üëã</p>
         </div>
         <FormField label="Phone Number">
           <div className="flex gap-2">
@@ -44,7 +44,7 @@ export default function LoginScreen() {
           <div className="flex-1 h-px bg-gray-200" /><span className="text-xs text-gray-300 font-semibold">OR</span><div className="flex-1 h-px bg-gray-200" />
         </div>
         <button onClick={() => navigate("pin-login")} className="w-full py-3.5 rounded-3xl bg-white text-[#19a46a] font-bold text-[15px] border-2 border-[#19a46a] flex items-center justify-center gap-2 mb-5">
-          <span className="text-xl">Ì±Ü</span> Login with Fingerprint
+          <span className="text-xl">‚òùÔ∏è</span> Login with Fingerprint
         </button>
         <p className="text-center text-sm text-gray-400">Don't have an account? <button onClick={() => navigate("signup")} className="text-[#19a46a] font-semibold">Sign Up</button></p>
       </div>

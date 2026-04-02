@@ -2,9 +2,9 @@ import { useState } from "react"
 import { useApp } from "../context/AppContext"
 
 const SLIDES = [
-  { emoji: "í²¸", title: "Fast & Secure Payments", body: "Send money, pay bills and manage your finances all in one place with OPay." },
-  { emoji: "í¾", title: "Earn While You Spend",   body: "Get cashback, earn reward points and enjoy exclusive offers every time you transact." },
-  { emoji: "í´", title: "Your Money is Safe",     body: "Bank-level security with biometric login, real-time alerts and 24/7 fraud protection." },
+  { emoji: "ğŸ’¸", title: "Fast & Secure Payments", body: "Send money, pay bills and manage your finances all in one place with OPay." },
+  { emoji: "ğŸ", title: "Earn While You Spend",   body: "Get cashback, earn reward points and enjoy exclusive offers every time you transact." },
+  { emoji: "ğŸ”", title: "Your Money is Safe",     body: "Bank-level security with biometric login, real-time alerts and 24/7 fraud protection." },
 ]
 
 export default function OnboardingScreen() {

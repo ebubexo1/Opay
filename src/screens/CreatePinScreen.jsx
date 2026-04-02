@@ -21,7 +21,7 @@ export default function CreatePinScreen() {
           </div>
         </div>
         <p className="text-center text-sm text-gray-400 mb-4">Enter your new PIN</p>
-        <PinPad onComplete={() => { showToast("PIN created! Welcome í¾‰"); navigate("home") }} />
+        <PinPad onComplete={() => { showToast("PIN created! Welcome ðŸŽ¯"); navigate("home") }} />
       </div>
     </div>
   )

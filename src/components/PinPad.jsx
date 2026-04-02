@@ -19,7 +19,7 @@ export default function PinPad({ onComplete, pinLength = 4, showFinger = false }
       <div className="grid grid-cols-3 gap-3 w-full max-w-[290px]">
         {KEYS.map(([n, sub], i) => {
           if (n === null) {
-            if (showFinger && i === 9) return <button key={i} className="flex items-center justify-center rounded-2xl py-4 bg-gray-100"><span className="text-2xl">Ì±Ü</span></button>
+            if (showFinger && i === 9) return <button key={i} className="flex items-center justify-center rounded-2xl py-4 bg-gray-100"><span className="text-2xl">‚òù</span></button>
             return <div key={i} />
           }
           if (n === "del") return (

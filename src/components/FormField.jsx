@@ -13,7 +13,7 @@ export const inputCls = "w-full px-3.5 py-3.5 rounded-xl border-[1.5px] border-g
 export function PhonePrefix() {
   return (
     <div className="flex items-center gap-2 px-3 py-[13px] rounded-xl border-[1.5px] border-gray-200 bg-gray-50 flex-shrink-0">
-      <span className="text-lg">í·³í·¬</span>
+      <span className="text-lg"></span>
       <div className="w-px h-4 bg-gray-300" />
       <span className="text-sm font-semibold text-gray-700">+234</span>
     </div>

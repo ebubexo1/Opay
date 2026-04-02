@@ -8,7 +8,7 @@ const FILTERS = ["All", "Transfer", "Airtime", "Bills", "Received"]
 const TXNS = [
   { date: "Today", items: [
     { icon: "↗", bg: "bg-green-100", color: "#059669", name: "Money Received",   sub: "From Emeka Chukwu",    amt: "+₦50,000",  credit: true,  time: "09:14",    status: "success", type: "Received"  },
-    { icon: "���", bg: "bg-yellow-50",color: "#d97706", name: "Airtime - MTN",    sub: "0803 456 7890",        amt: "-₦2,000",   credit: false, time: "08:32",    status: "success", type: "Airtime"   },
+    { icon: "", bg: "bg-yellow-50",color: "#d97706", name: "Airtime - MTN",    sub: "0803 456 7890",        amt: "-₦2,000",   credit: false, time: "08:32",    status: "success", type: "Airtime"   },
   ]},
   { date: "Yesterday", items: [
     { icon: "⚡", bg: "bg-yellow-100",color: "#a16207",name: "EKEDC Electricity",sub: "Meter: 4510293816",    amt: "-₦15,000",  credit: false, time: "4:20 PM",  status: "success", type: "Bills"     },
@@ -17,7 +17,7 @@ const TXNS = [
   { date: "28 March", items: [
     { icon: "↗", bg: "bg-green-100", color: "#059669", name: "Salary Credit",    sub: "From Employer Ltd",    amt: "+₦450,000", credit: true,  time: "8:00 AM",  status: "success", type: "Received"  },
     { icon: "→", bg: "bg-red-100",   color: "#dc2626", name: "Bank Transfer",    sub: "To GTBank • Ngozi Obi",amt: "-₦30,000",  credit: false, time: "3:15 PM",  status: "pending", type: "Transfer"  },
-    { icon: "���", bg: "bg-purple-100",color: "#7c3aed",name: "DSTV Subscription",sub: "Compact Plus",         amt: "-₦9,900",   credit: false, time: "2:11 PM",  status: "success", type: "Bills"     },
+    { icon: "📞", bg: "bg-purple-100",color: "#7c3aed",name: "DSTV Subscription",sub: "Compact Plus",         amt: "-₦9,900",   credit: false, time: "2:11 PM",  status: "success", type: "Bills"     },
   ]},
 ]
 

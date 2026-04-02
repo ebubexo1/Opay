@@ -5,8 +5,8 @@ import BottomNav from "../components/BottomNav"
 import AndroidNav from "../components/AndroidNav"
 
 const ACTIONS = [
-  { label: "Freeze",   toast: "Card frozen! ‚ùÑÔ∏è",       icon: <><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07" /></> },
-  { label: "Details",  toast: "Card details shown Ì±Å",  icon: <><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></> },
+  { label: "Freeze",   toast: "Card frozen! ‚ùÑ",       icon: <><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07" /></> },
+  { label: "Details",  toast: "Card details shown üëÅ",  icon: <><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" /></> },
   { label: "Settings", toast: "Card settings opened!",  icon: <><circle cx="12" cy="12" r="3" /><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14" /></> },
 ]
 
@@ -26,7 +26,7 @@ export default function CardsScreen() {
             <div className="absolute right-[-30px] top-[-30px] w-32 h-32 rounded-full bg-white/10" />
             {frozen && (
               <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-[20px]">
-                <div className="text-center"><span className="text-4xl">‚ùÑÔ∏è</span><p className="text-white font-bold text-sm mt-1">Card Frozen</p></div>
+                <div className="text-center"><span className="text-4xl">‚ùÑ</span><p className="text-white font-bold text-sm mt-1">Card Frozen</p></div>
               </div>
             )}
             <div className="w-8 h-6 rounded bg-yellow-400 mb-4" />
@@ -38,12 +38,12 @@ export default function CardsScreen() {
           </div>
         </div>
         <div className="flex gap-2.5 px-3.5 mb-4">
-          <button onClick={() => showToast("Virtual card added! Ì≤≥")} className="flex-1 py-3 rounded-xl bg-[#19a46a] text-white text-xs font-bold">+ Add Virtual Card</button>
+          <button onClick={() => showToast("Virtual card added! ")} className="flex-1 py-3 rounded-xl bg-[#19a46a] text-white text-xs font-bold">+ Add Virtual Card</button>
           <button onClick={() => showToast("Physical card requested!")} className="flex-1 py-3 rounded-xl bg-white text-[#19a46a] border border-[#19a46a] text-xs font-bold">Request Physical</button>
         </div>
         <div className="grid grid-cols-3 gap-2.5 px-3.5 mb-4">
           {ACTIONS.map(({ label, toast, icon }) => (
-            <button key={label} onClick={() => { if (label === "Freeze") setFrozen(f => !f); showToast(label === "Freeze" ? (frozen ? "Card unfrozen! ‚úÖ" : "Card frozen! ‚ùÑÔ∏è") : toast) }} className="bg-white rounded-xl py-3 flex flex-col items-center gap-1.5">
+            <button key={label} onClick={() => { if (label === "Freeze") setFrozen(f => !f); showToast(label === "Freeze" ? (frozen ? "Card unfrozen! ‚úÖ" : "Card frozen! ‚ùÑ") : toast) }} className="bg-white rounded-xl py-3 flex flex-col items-center gap-1.5">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#19a46a" strokeWidth="2">{icon}</svg>
               <span className="text-[11px] text-gray-600 font-semibold">{label === "Freeze" && frozen ? "Unfreeze" : label}</span>
             </button>
@@ -52,7 +52,7 @@ export default function CardsScreen() {
         <div className="px-3.5">
           <p className="text-[13px] font-bold text-gray-900 mb-2.5">Card Transactions</p>
           <div className="bg-white rounded-2xl overflow-hidden">
-            {[{ icon: "ÌªçÔ∏è", name: "Online Shopping", sub: "Jumia ‚Ä¢ Card Payment", amt: "-‚Ç¶12,500" }, { icon: "ÌΩî", name: "Food Delivery", sub: "Chowdeck ‚Ä¢ Card Payment", amt: "-‚Ç¶4,800" }].map(({ icon, name, sub, amt }) => (
+            {[{ icon: "", name: "Online Shopping", sub: "Jumia ‚Ä¢ Card Payment", amt: "-‚Ç¶12,500" }, { icon: "üí≥", name: "Food Delivery", sub: "Chowdeck ‚Ä¢ Card Payment", amt: "-‚Ç¶4,800" }].map(({ icon, name, sub, amt }) => (
               <div key={name} className="flex items-center px-3.5 py-3.5 border-b border-gray-50 last:border-0">
                 <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-3 text-lg flex-shrink-0">{icon}</div>
                 <div className="flex-1"><p className="text-[13px] font-bold text-gray-900">{name}</p><p className="text-[11px] text-gray-400">{sub}</p></div>

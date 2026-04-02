@@ -20,7 +20,7 @@ export default function AddMoneyScreen() {
           <p className="text-xs text-gray-500 mb-1">Your OPay Account Number</p>
           <p className="text-3xl font-black text-gray-900 tracking-[3px] my-1">{config.accountNumber}</p>
           <p className="text-sm text-[#19a46a] font-bold mb-3">OPay â€” {userName}</p>
-          <button onClick={() => showToast("Account number copied!")} className="px-5 py-2.5 rounded-full bg-[#19a46a] text-white text-xs font-bold">í³‹ Copy Account Number</button>
+          <button onClick={() => showToast("Account number copied!")} className="px-5 py-2.5 rounded-full bg-[#19a46a] text-white text-xs font-bold">ðŸŽ‰ Copy Account Number</button>
         </div>
         <p className="text-[13px] font-bold text-gray-900 mb-3">Add money via</p>
         <div className="flex flex-col gap-2.5">

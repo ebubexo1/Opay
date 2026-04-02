@@ -32,7 +32,7 @@ export default function SuccessScreen() {
           ))}
         </div>
         <button onClick={() => navigate("home")} className="w-full py-4 rounded-2xl bg-[#19a46a] text-white font-bold text-[15px] mb-3">Done</button>
-        <button onClick={() => showToast("Receipt shared!")} className="w-full py-4 rounded-2xl bg-[#e6f7f0] text-[#19a46a] font-bold text-[15px]">í³¤ Share Receipt</button>
+        <button onClick={() => showToast("Receipt shared!")} className="w-full py-4 rounded-2xl bg-[#e6f7f0] text-[#19a46a] font-bold text-[15px]">ðŸ“¤ Share Receipt</button>
       </div>
       <AndroidNav />
     </div>

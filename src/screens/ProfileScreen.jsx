@@ -6,18 +6,18 @@ import Avatar from "../components/Avatar"
 
 const SECTIONS = [
   { title: "Account", rows: [
-    { emoji: "Ì±§", bg: "bg-[#e6f7f0]", label: "Personal Information", sub: "View and edit your profile", action: "edit-profile" },
-    { emoji: "Ìª°Ô∏è", bg: "bg-yellow-50",  label: "KYC Verification",    sub: "Verified ‚úì",                  action: "kyc", subGreen: true },
-    { emoji: "Ìø¶", bg: "bg-blue-50",    label: "Linked Bank Accounts", sub: "2 accounts linked",           action: "banks" },
+    { emoji: "", bg: "bg-[#e6f7f0]", label: "Personal Information", sub: "View and edit your profile", action: "edit-profile" },
+    { emoji: "üîí", bg: "bg-yellow-50",  label: "KYC Verification",    sub: "Verified ‚úì",                  action: "kyc", subGreen: true },
+    { emoji: "", bg: "bg-blue-50",    label: "Linked Bank Accounts", sub: "2 accounts linked",           action: "banks" },
   ]},
   { title: "Security", rows: [
-    { emoji: "Ì¥í", bg: "bg-pink-50",    label: "Change PIN",     sub: "Update your 4-digit PIN",       action: "change-pin" },
-    { emoji: "Ì±Ü", bg: "bg-[#e6f7f0]", label: "Biometric Login", sub: "Fingerprint & Face ID",         action: "biometric", toggle: true },
+    { emoji: "", bg: "bg-pink-50",    label: "Change PIN",     sub: "Update your 4-digit PIN",       action: "change-pin" },
+    { emoji: "‚òùÔ∏è", bg: "bg-[#e6f7f0]", label: "Biometric Login", sub: "Fingerprint & Face ID",         action: "biometric", toggle: true },
   ]},
   { title: "Support", rows: [
-    { emoji: "Ì¥î", bg: "bg-purple-50",  label: "Notifications",  sub: "48 unread",                     action: "notifications" },
+    { emoji: "", bg: "bg-purple-50",  label: "Notifications",  sub: "48 unread",                     action: "notifications" },
     { emoji: "‚ùì", bg: "bg-yellow-50",  label: "Help Center",    sub: "FAQs and support",              action: "help" },
-    { emoji: "Ì∫™", bg: "bg-red-50",     label: "Logout",         sub: "Sign out of OPay",              action: "logout", red: true },
+    { emoji: "", bg: "bg-red-50",     label: "Logout",         sub: "Sign out of OPay",              action: "logout", red: true },
   ]},
 ]
 

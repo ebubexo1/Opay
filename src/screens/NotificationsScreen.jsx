@@ -5,13 +5,13 @@ import GreenHeader from "../components/GreenHeader"
 import AndroidNav from "../components/AndroidNav"
 
 const NOTIFS = [
-  { read: false, emoji: "í²°", title: "Money Received",          body: "You received â‚¦50,000 from Emeka Chukwu via OPay transfer.",         time: "Today, 09:14 AM" },
+  { read: false, emoji: "ğŸ’°", title: "Money Received",          body: "You received â‚¦50,000 from Emeka Chukwu via OPay transfer.",         time: "Today, 09:14 AM" },
   { read: false, emoji: "âœ…", title: "Airtime Purchase",         body: "â‚¦2,000 MTN airtime purchased for 0803 456 7890.",                   time: "Today, 08:32 AM" },
-  { read: false, emoji: "í¾¯", title: "Saving Challenge Reminder",body: "Don't miss your daily savings goal! Save â‚¦500 today.",             time: "Yesterday, 9:00 AM" },
-  { read: true,  emoji: "í¾‰", title: "Salary Received",          body: "â‚¦450,000 salary credit has been received in your OPay wallet.",    time: "28 Mar, 8:00 AM" },
-  { read: true,  emoji: "í´¥", title: "Special Weekend Offer",    body: "Get 10% cashback on all airtime purchases this weekend only!",     time: "27 Mar, 2:00 PM" },
-  { read: true,  emoji: "í³ˆ", title: "OWealth Update",           body: "Earn up to 17% per annum interest on your savings with OWealth.", time: "26 Mar, 11:00 AM" },
-  { read: true,  emoji: "í¾", title: "Referral Bonus",           body: "Your friend Aisha has joined OPay! You earned â‚¦500 bonus.",       time: "25 Mar, 4:15 PM" },
+  { read: false, emoji: "ğŸ¯", title: "Saving Challenge Reminder",body: "Don't miss your daily savings goal! Save â‚¦500 today.",             time: "Yesterday, 9:00 AM" },
+  { read: true,  emoji: "ğŸ¯", title: "Salary Received",          body: "â‚¦450,000 salary credit has been received in your OPay wallet.",    time: "28 Mar, 8:00 AM" },
+  { read: true,  emoji: "", title: "Special Weekend Offer",    body: "Get 10% cashback on all airtime purchases this weekend only!",     time: "27 Mar, 2:00 PM" },
+  { read: true,  emoji: "", title: "OWealth Update",           body: "Earn up to 17% per annum interest on your savings with OWealth.", time: "26 Mar, 11:00 AM" },
+  { read: true,  emoji: "ğŸ", title: "Referral Bonus",           body: "Your friend Aisha has joined OPay! You earned â‚¦500 bonus.",       time: "25 Mar, 4:15 PM" },
 ]
 
 export default function NotificationsScreen() {

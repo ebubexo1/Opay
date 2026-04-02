@@ -4,18 +4,18 @@ import BottomNav from "../components/BottomNav"
 import AndroidNav from "../components/AndroidNav"
 
 const EARN_LIST = [
-  { emoji: "í²¸", title: "Make a Transfer",      pts: "+50 pts per transfer",    action: "transfer",      btn: "Do Now" },
-  { emoji: "í³±", title: "Buy Airtime",           pts: "+20 pts per purchase",    action: "airtime",       btn: "Do Now" },
-  { emoji: "í±¥", title: "Refer a Friend",        pts: "+500 pts per referral",   action: "copy-link",     btn: "Invite" },
-  { emoji: "í²°", title: "Save with OWealth",     pts: "+100 pts per â‚¦10K saved", action: "toast-owealth", btn: "Save"   },
+  { emoji: "ðŸ’¸", title: "Make a Transfer",      pts: "+50 pts per transfer",    action: "transfer",      btn: "Do Now" },
+  { emoji: "", title: "Buy Airtime",           pts: "+20 pts per purchase",    action: "airtime",       btn: "Do Now" },
+  { emoji: "ðŸ’µ", title: "Refer a Friend",        pts: "+500 pts per referral",   action: "copy-link",     btn: "Invite" },
+  { emoji: "ðŸ’°", title: "Save with OWealth",     pts: "+100 pts per â‚¦10K saved", action: "toast-owealth", btn: "Save"   },
   { emoji: "âš¡", title: "Pay Electricity Bills", pts: "+30 pts per payment",     action: "toast-elect",   btn: "Pay Now"},
 ]
 
 const REDEEM_LIST = [
-  { emoji: "í¾", title: "â‚¦500 Cashback",    pts: "500 pts required",   action: "toast-cashback" },
-  { emoji: "í³¡", title: "Free Data 1GB",    pts: "300 pts required",   action: "toast-data"     },
-  { emoji: "í¾«", title: "â‚¦200 Airtime",     pts: "200 pts required",   action: "toast-airtime"  },
-  { emoji: "í¿†", title: "Gold Membership",  pts: "2,000 pts required", action: "toast-gold"     },
+  { emoji: "ðŸŽ", title: "â‚¦500 Cashback",    pts: "500 pts required",   action: "toast-cashback" },
+  { emoji: "ðŸ¥‡", title: "Free Data 1GB",    pts: "300 pts required",   action: "toast-data"     },
+  { emoji: "ðŸŽ", title: "â‚¦200 Airtime",     pts: "200 pts required",   action: "toast-airtime"  },
+  { emoji: "", title: "Gold Membership",  pts: "2,000 pts required", action: "toast-gold"     },
 ]
 
 export default function RewardsScreen() {
@@ -24,12 +24,12 @@ export default function RewardsScreen() {
   const doAction = (action) => {
     if (action === "transfer")           navigate("transfer")
     else if (action === "airtime")       navigate("airtime")
-    else if (action === "copy-link")     showToast("Referral link copied! í´—")
+    else if (action === "copy-link")     showToast("Referral link copied! ")
     else if (action === "toast-owealth") showToast("OWealth opened!")
     else if (action === "toast-elect")   showToast("Electricity bills opened!")
-    else if (action === "toast-cashback")showToast("â‚¦500 cashback redeemed! í¾‰")
-    else if (action === "toast-data")    showToast("1GB data redeemed! í¾‰")
-    else if (action === "toast-airtime") showToast("â‚¦200 airtime redeemed! í¾‰")
+    else if (action === "toast-cashback")showToast("â‚¦500 cashback redeemed! ðŸŽ¯")
+    else if (action === "toast-data")    showToast("1GB data redeemed! ðŸŽ¯")
+    else if (action === "toast-airtime") showToast("â‚¦200 airtime redeemed! ðŸŽ¯")
     else if (action === "toast-gold")    showToast("Not enough points yet!")
   }
 

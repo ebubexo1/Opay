@@ -16,7 +16,7 @@ export default function PinLoginScreen() {
       </div>
       <div className="flex-1 bg-white rounded-t-3xl -mt-4 px-5 pt-8 overflow-y-auto pb-6">
         <p className="text-center text-sm text-gray-400 mb-4">Enter your PIN</p>
-        <PinPad onComplete={() => { showToast(`Welcome back, ${userName}! í±‹`); navigate("home") }} showFinger />
+        <PinPad onComplete={() => { showToast(`Welcome back, ${userName}! ðŸ‘‹`); navigate("home") }} showFinger />
         <div className="text-center mt-6">
           <button onClick={() => navigate("forgot")} className="text-[#19a46a] text-sm font-semibold">Forgot PIN?</button>
         </div>
